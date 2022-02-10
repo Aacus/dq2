@@ -4,7 +4,8 @@ fn main() {
     loop {
         let mut com = String::new();
         std::io::stdin().read_line(&mut com).unwrap();
-        let comm: Vec<&str> = com.splitn(2, ' ').collect();
+        let mut comm: Vec<&str> = com.splitn(2, ' ').collect();
+        comm.push("");
         match comm[0].trim() {
             "" => help(),
             "ro" => ro(comm[1].trim().parse::<i32>().unwrap_or(0), 0),
