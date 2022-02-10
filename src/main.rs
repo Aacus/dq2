@@ -20,7 +20,7 @@ fn main() {
     }
 }
 fn help() {
-    println!("Enter(機能一覧) bu(武器) bo(防具) do(道具) ju(呪文) ku(くじ絵柄)\nro 経験値数(ローレシア:次LVまで)\nsa 経験値数(サマルトリア:次LVまで)\nmu 経験値数(ムーンブルク:次LVまで)\nlv LV数(全員のステータス)")
+    println!("Enter(機能一覧) bu(武器) bo(防具) do(道具) ju(呪文)\nro 経験値数(ローレシア:次LVまで)\nsa 経験値数(サマルトリア:次LVまで)\nmu 経験値数(ムーンブルク:次LVまで)\nlv LV数(全員のステータス)")
 }
 fn ro(ex: i32, lv: i32) {
     // 経験値からLVとステータスと残りのEXを表示
